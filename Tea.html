@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<script src="myScript.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Shadows Into Light;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: auto; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: auto; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2 style= "color:rgb(122, 212, 239)"> Tea of the Week</h2>
+  <li style="font-size:32px"><a href="positivetea.html">POSITIVE TEA  OR</a> <a href="messytea.html">MESSY TEA</a></li>   <li style="font-size:30px"><a href="convo.html">JOIN THE CONVERSATION!</a></li>  <li style="font-size:32px"><a href="celeb.html">CELEB'S LIVING THEIR BEST LIFE!</a></li>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h1 style= "color: rgb(145, 14, 27)">FOLLOW ME!</h1>
+      <p><img src= "snap.JPG" style="width:300px;height:300px;"> <img src= "insta.JPG" style="width:300px;height:300px;"><img src= "tw.jpg" style="width:300;height:300px;"></p>
+
+    </ul>
+  </nav>
+
+  <article>
+    <h1  style= "text-align:center">ON IG TODAY!</h1>
+    <p style= "text-align:center;"><img src= "OVO.jpg" style="width:300px;height:350px;"</p>
+    <p style= "text-align:center;">Drake looking fine as always!</p>
+    <p><img src= "shane.jpg" style="width:270px;height:350px;"</p>
+    <p>Shane has a GUCCI SUIT?!</p>
+    <p style= "text-align: center;"><img src="selena.jpg" style="width:300px;height:250px;"></p>
+    <p style= "text-align:center;">Selena is found on a boat somewhere UNBOTHERED by Justin's engagment #TEAAA</p>
+    <p style= "text-align:right;"><img src= "kim.jpg" style="width:270px;height:350px;"</p>
+    <p style= "text-align:right;">Kim K and Kris #MOMVIBES</p>
+    <p style= "text-align:center;"><img src="snoop.jpg" style="width:300px;height:270px;"></p>
+    <p style= "text-align:center;">Uncle Snoop and his grandson looking happier than ever! #WELOVE</p>
+  </article>
+</section>
+
+</body>
+</html>
